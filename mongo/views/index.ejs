@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+	<div class="well">
+		<h1 class="text-center">STUDENT DATA</h1>
+	</div>
+</div>
+
+<div class="container">
+<table class="table table-hover table-striped table-bordered">
+	<tr class="text-center">
+		<td>S.NO</td>
+		<td>NAME</td>
+		<td>AGE</td>
+		<td>CITY</td>
+		<td>SUBJECT</td>
+	</tr>
+
+	<%data.forEach(function(x,i){%>
+
+	<tr>
+		<td><%=i+1%></td>
+		<td><%=x.name%></td>
+		<td><%=x.age%></td>
+		<td><%=x.city%></td>
+		<td><%=x.subject%></td>
+	</tr>
+
+
+	<%})%>
+</table>
+
+</div>
+</body>
+</html>

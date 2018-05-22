@@ -1,0 +1,86 @@
+!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<style type="text/css">
+.panel-body img{
+height: 200px;
+width: 200px;
+}
+
+</style>
+
+
+<body>
+
+<div class="container">
+	<div class="well">
+		<h1 class="text-center">WEBSITE</h1>
+	</div>
+</div>
+
+<div class="container">
+<div class="row">
+	<div class="col-md-4">
+			<h2 class="text-center">CATEGORY</h2>
+
+
+
+	</div>
+	<div class="col-md-8">
+		<h2 class="text-center">OUR WEBSITE</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+</div>
+<div class="row">
+
+
+		<ol class="breadcrumb">
+					<li>Popular Items</li>
+		</ol>
+		
+		<div class="row">
+
+			<%data.forEach(function(obj){%>
+
+		<div class="col-md-4 col-sm-4">
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading">
+
+			<h4><%=obj.productname%><small><br>(Rs.<%=obj.productprice%>)</small></h4>
+			</div>
+
+<div class="panel-body">
+	<img src="<%=obj.img%>" />
+</div>
+	<div class="panel-footer">
+		<button class="btn btn-primary btn-sm">Buy</button>
+		<button class="btn btn-info btn-sm pull-right">Add To Cart</button>
+	</div>
+</div>
+
+</div>
+
+	<%})%>
+
+				</div>
+
+				</div>
+</div>
