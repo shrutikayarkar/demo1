@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<div class="jumbotron">
+<h4 class="text-center">Details</h4>
+</div>
+
+
+<div class="container">
+<table class="table table-hover table-striped table-bordered">
+	<tr class="text-center">
+		<td>Name</td>
+		<td>Username</td>
+		<td>Mobile number</td>
+		<td>Email</td>
+		<td>Password</td>
+		<td>RePassword</td>
+		<td>Address</td>
+		<td>Gender</td>
+		<td>City</td>
+	</tr>
+
+	<%data.forEach(function(x){%>
+
+
+	<tr>
+		<td><%=x.Name%></td>
+		<td><%=x.Username%></td>
+		<td><%=x.Mobilenumber%></td>
+		<td><%=x.Email%></td>
+		<td><%=x.Password%></td>
+		<td><%=x.RePassword%></td>
+		<td><%=x.Address%></td>
+		<td><%=x.Gender%></td>
+		<td><%=x.City%></td>
+		
+
+		<%})%>
+
+		</tr>
+
+</table>
+</div>
+
+</body>
+</html>
